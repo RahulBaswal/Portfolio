@@ -1,0 +1,199 @@
+% Resume SDE 2 - 02/June/2025
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rahul Buswal} \\ \vspace{1pt} 
+     \href{mailto:rb.rahulbaswal@gmail.com}{\underline{rb.rahulbaswal@gmail.com}} $|$
+     \small +91-9599775550 $|$  
+    \href{https://www.linkedin.com/in/rahul-buswal/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/RahulBaswal}{\underline{Github}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeItemListStart
+    {Software Development Engineer with \textbf{3.3+ years} of experience in designing and developing scalable backend systems  using \textbf{Java} and the \textbf{Spring Framework}. Currently at \textbf{Cars24}, contributed to the Autopilot driver booking platform, reducing latency by 35\% and increasing driver engagement by 49\%. Previously at \textbf{WLPayments}, built a notification service and integrated banking APIs.
+  \resumeItemListEnd
+\vspace{-1em}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cars24 Pvt. Ltd.}{Jun 2024 – Present}
+      {Software Development Engineer}{Gurugram, Haryana}
+      \resumeItemListStart
+        \resumeItem{Architected and delivered a driver \textbf{incentive} system used daily by 10K+ drivers, increasing uniform usage by 49\% and reducing late arrivals by 12\%.}
+        \resumeItem{Implemented GCP Pub/Sub notification engine for \textbf{ETA alerts}, improving app NPS by 18\%.}
+        \resumeItem{Introduced a \textbf{subscription} based hiring model, automating onboarding and cutting setup time by 50\%.}
+        \resumeItem{Designed \textbf{VN calling} layer with Exotel API, reducing call drop rate by 65\% during high-demand hours.}
+        \resumeItem{Led multilingual rollout (\textbf{i18n}) for driver app, increasing regional adoption in 4 states.}
+        \resumeItem{Enhanced \textbf{admin panel} for trip status updates, boosting operational efficiency by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {WLPayments}{Feb 2022 – May 2024}
+      {Software Developer}{New Delhi}
+      \resumeItemListStart
+        \resumeItem{Developed a notification \textbf{microservice} (Spring Boot, Kafka) handling 500K+ messages/month across email, SMS, and webhook channels, achieved 94\% test coverage.}
+        \resumeItem{\textbf{Integrated} APIs of Stripe, Adyen, etc, improved fund settlement times by 35\%.}
+        \resumeItem{Refactored retry \textbf{batch} jobs using Spring Batch with exponential backoff, reducing failure rate by 40\%.}
+        \resumeItem{Secured credential storage using \textbf{HashiCorp Vault} with automated token renewal.}
+        \resumeItem{Authored \textbf{Swagger} API specs and integrated \textbf{SonarQube} for CI linting, reducing PR cycle time by 25\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+{\small
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+     \textbf{Languages}{: Java 8/17, SQL} \\
+     \textbf{Frameworks}{: Spring Boot, Hibernate, REST APIs, Microservices} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, GCP Spanner, MongoDB, Firebase} \\
+     \textbf{Cloud \& Messaging}{: GCP Pub/Sub, Kafka, RabbitMQ, Redis, Hazelcast} \\
+     \textbf{DevOps}{: Git, Maven, Gradle, TeamCity, DataDog, NewRelic} \\
+     \textbf{Security}{: HashiCorp Vault, OAuth 2.0} \\
+     \textbf{Testing}{: JUnit, Mockito, Jacoco} \\
+
+    %\textbf{Agile}{: Scrum, Kanban, Jira} \\
+ \end{itemize}
+}
+\resumeItemListEnd
+\vspace{-1em}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Autopilot Booking Platform}}{}
+        \resumeItemListStart
+          \resumeItem{Built \textbf{microservices} for driver incentives, real-time ETA, VN calling, and i18n, consolidated driver systems into a modular platform, improving deployment agility by \textbf{40\%} and boosting engagement by \textbf{49\%}.}
+        \resumeItemListEnd  
+    \resumeProjectHeading
+        {\textbf{Notification Microservice}}{}
+        \resumeItemListStart
+          \resumeItem{Built a robust Spring Boot service for \textbf{multi-channel} alerts with retry scheduling, improved delivery reliability and achieved 94\% test coverage, processing over \textbf{500K+} notifications monthly.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bharati Vidyapeeth Deemed University}{New Delhi}
+      {Bachelor of Computer Applications}{Jun 2017 – Jun 2020}
+  \resumeSubHeadingListEnd
+
+\section*{Certifications}
+Cyber Security Awareness (\textbf{Grade A}) – Skill Factory Learning \\
+GNIIT Software Development Specialization – \textbf{NIIT}
+
+\end{document}
